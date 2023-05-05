@@ -5,33 +5,30 @@ import { HelpComponent } from './pages/help/help.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { AdminLayoutComponent } from './admin-layout/admin-layout.component';
 
 const routes: Routes = [
+  // {
+  //   path: '',
+  //   pathMatch: 'full',
+  //   redirectTo: 'home',
+  // },
   {
     path: '',
-    pathMatch: 'full',
-    redirectTo: 'home',
-  },
-  {
-    path: 'home',
-    component: HomeComponent,
-  },
-  {
-    path: 'profile',
-    component: ProfileComponent,
-  },
-  {
-    path: 'about',
-    component: AboutComponent,
-  },
-  {
-    path: 'help',
-    component: HelpComponent,
+    component: AdminLayoutComponent,
+    loadChildren: () =>
+      import('./admin-layout/admin-layout.module').then((m) => {
+        return m.AdminLayoutModule;
+      }),
   },
   {
     path: '**',
     component: NotFoundComponent,
   },
+  // {
+  //   path: 'home',
+  //   component: HomeComponent,
+  // },
 ];
 
 @NgModule({

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,9 +14,11 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { AboutComponent } from './pages/about/about.component';
 import { HelpComponent } from './pages/help/help.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { RouterModule } from '@angular/router';
+import { FaqComponent } from './pages/faq/faq.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ProfileComponent, AboutComponent, HelpComponent, NotFoundComponent],
+  declarations: [AppComponent, HomeComponent, ProfileComponent, HelpComponent, NotFoundComponent, FaqComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,5 +31,6 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
+
 })
 export class AppModule {}

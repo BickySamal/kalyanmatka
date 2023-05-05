@@ -1,0 +1,83 @@
+.logoDiv {
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: inset 27px 27px 54px #b8b8b8,
+                inset -27px -27px 54px #ffffff;
+}
+
+
+.marquee{
+    color: #fff;
+    white-space: nowrap;
+    // overflow: hidden;
+    box-sizing: border-box;
+    margin: 0 5px;
+    height: 40px;
+}
+
+#scroll-container {
+    // border: 3px solid black;
+    border-radius: 5px;
+    height: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .scoreCard{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  }
+  
+//   #scroll-text {
+//     height: 100%;
+//     text-align: center;
+    
+//     /* animation properties */
+//     -moz-transform: translateY(100%);
+//     -webkit-transform: translateY(100%);
+//     transform: translateY(100%);
+    
+//     -moz-animation: my-animation 5s linear infinite;
+//     -webkit-animation: my-animation 5s linear infinite;
+//     animation: my-animation 2s linear infinite;
+//   }
+  
+//   /* for Firefox */
+//   @-moz-keyframes my-animation {
+//     from { -moz-transform: translateY(100%); }
+//     to { -moz-transform: translateY(-100%); }
+//   }
+  
+//   /* for Chrome */
+//   @-webkit-keyframes my-animation {
+//     from { -webkit-transform: translateY(50%); }
+//     to { -webkit-transform: translateY(-50%); }
+//   }
+  
+//   @keyframes my-animation {
+//     from {
+//       -moz-transform: translateY(100%);
+//       -webkit-transform: translateY(100%);
+//       transform: translateY(100%);
+//     }
+//     to {
+//       -moz-transform: translateY(-100%);
+//       -webkit-transform: translateY(-100%);
+//       transform: translateY(-100%);
+//     }
+//   }
+
+
+  .luckyDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .divHeaderBG{
+    background: #e0e0e0;
+  }
